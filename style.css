@@ -18,6 +18,7 @@
     text-align: start;
     display: flex;
     vertical-align: middle;
+    transition-timing-function: ease-in-out;
 }
 
 .image-custom-col-2{
@@ -32,6 +33,7 @@
     margin-right: 15px;
     overflow: hidden;
     position: relative;
+    transition-timing-function: ease-in-out;
 }
 
 .overlay {
@@ -52,7 +54,25 @@
     justify-content: end;
     text-align: end;
     display: flex;
+    transition-timing-function: ease-in-out;
 }
+
+.fade-in-image {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  .fade-out-image {
+    animation: fadeOut 2s;
+  }
+  @keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+  }
 
 
 /* prev and next buttons */

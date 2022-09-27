@@ -121,13 +121,21 @@ function decreaseCol3(){
 next.addEventListener('click', increaseSlideCount);
 next.addEventListener('click', increasecol1);
 next.addEventListener('click', increasecol3);
+next.addEventListener('click', animate);
+
+function animate(){
+    sliderCol2.classList.remove('fade-in-image');
+    window.requestAnimationFrame(function(){
+        sliderCol2.classList.add('fade-in-image'); 
+    })
+}
 
 function increaseSlideCount(){
     slideCount++;
     if (slideCount > activities.length - 1) {
         slideCount = 0;
       }
-    showItem(slideCount);  
+    showItem(slideCount);
 };
 
 //col1
