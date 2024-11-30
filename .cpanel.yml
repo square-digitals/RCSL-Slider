@@ -1,6 +1,10 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/squaredi/public_html/
+    - export DEPLOYPATH=/home/squaredi/public_html/test.squaredigitals.com.ng
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp all.css $DEPLOYPATH
+    - /bin/cp app.js $DEPLOYPATH
+    - /bin/cp all.js $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
